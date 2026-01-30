@@ -61,7 +61,9 @@ if not df.empty:
         use_container_width=True,
 
         hide_index=True
+    )
     # (선택사항) 통계 보여주기
     st.metric(label="총 읽은 책 권수", value=f"{len(df)}권")
 else:
     st.info("아직 기록된 책이 없습니다. 왼쪽 사이드바에서 책을 추가해주세요!")
+
